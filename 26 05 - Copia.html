@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LonaBras - Indústria de Lonas Plásticas</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background: #fff; color: #333; }
+        header { background: #004400; color: #fff; padding: 20px; text-align: center; }
+        header img.logo { max-width: 180px; height: auto; }
+        header h1 { margin-top: 10px; font-size: 2em; }
+        .whatsapp-btn { display: inline-flex; align-items: center; background: #25D366; color: #fff; padding: 10px 16px; border-radius: 6px; text-decoration: none; font-size: 16px; margin-top: 10px; }
+        .whatsapp-btn img { width: 28px; height: 28px; margin-right: 8px; }
+
+        nav { display: flex; justify-content: center; background: #fff; border-bottom: 3px solid #ffd700; }
+        nav a { margin: 12px 18px; color: #004400; text-decoration: none; font-weight: bold; }
+        nav a:hover { color: #25D366; }
+
+        .hero {
+            background: url('fabrica1.jpg') center/cover no-repeat;
+            height: 288px; position: relative;
+        }
+        .hero .overlay {
+            background: rgba(0,0,0,0.4); position: absolute; inset: 0;
+        }
+        .hero-content {
+            position: relative; color: #fff; text-align: center;
+            top: 50%; transform: translateY(-50%);
+        }
+        .hero-content h2 { font-size: 2.2em; margin-bottom: 10px; }
+        .hero-content p { font-size: 1.1em; }
+
+        main { max-width: 1200px; margin: 30px auto; padding: 0 20px; }
+        .section-title { text-align: center; color: #004400; font-size: 1.8em; margin-bottom: 18px; }
+
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap: 20px; }
+        .card { background: #f4f4f4; padding: 15px; border-radius: 6px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center; }
+        .card img { width: 100%; height: auto; border-radius: 4px; margin-bottom: 10px; }
+
+        .fabricacao-imagens {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 15px;
+        }
+
+        footer { background: #111; color: #fff; text-align: center; padding: 15px; font-size: 0.9em; }
+
+        @media(max-width: 600px) {
+            header h1 { font-size: 1.5em; }
+            .whatsapp-btn { font-size: 14px; padding: 8px 12px; }
+            .fabricacao-imagens {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        .contact {
+            background-color: #333;
+            color: white;
+            padding: 30px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .contact h2 { color: #ffd700; }
+        .contact p { font-size: 19px; }
+        .contact a {
+            color: #25D366;
+            font-size: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact a:hover {
+            color: #ffd700;
+            text-decoration: underline;
+        }
+
+        #fabricacao {
+            margin-top: 50px; /* Espaçamento maior acima da seção */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logotipo.png" alt="LonaBras Logo" class="logo" style="max-width: 500px;">
+        <h1>Industria de Lonas Plásticas</h1>
+        <p>Lona Plástica Preta</p>
+
+        <div style="margin-top: 20px;">
+            <a href="https://wa.me/5541991062006" target="_blank" style="
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #25D366;
+                color: white;
+                padding: 18px 22px;
+                border-radius: 10px;
+                font-size: 22px;
+                font-weight: bold;
+                text-decoration: none;
+                box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+                transition: transform 0.2s ease, background-color 0.2s ease;
+            " onmouseover="this.style.backgroundColor='#1EBE57';" onmouseout="this.style.backgroundColor='#25D366';">
+                <img src="WhatsApp_icon.png" alt="WhatsApp" style="width: 42px; height: 42px; margin-right: 14px;">
+                Compre pelo WhatsApp agora
+            </a>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#fabricacao">Fabricação</a>
+        <a href="#produtos">Produtos</a>
+        <a href="galeria.html">Galeria de Fotos</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <div class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h2>Excelência e Inovação</h2>
+            <p>Produção sustentável de lonas com alta durabilidade</p>
+        </div>
+    </div>
+
+    <main>
+        <section id="produtos">
+            <h2 class="section-title">Nossos Produtos</h2>
+            <div class="grid">
+                <div class="card"><img src="Lona Plástica Preta1.jpg" alt="Lona Preta" style="max-width: 80%;"><h3>Lona Preta</h3></div>
+                <div class="card"><img src="Lona Incolor.jpg" alt="Lona Incolor" style="max-width: 80%;"><h3>Lona Incolor</h3></div>
+                <div class="card"><img src="Lona Extra Forte 1.jpg" alt="Lona Extra Forte" style="max-width: 90%;"><h3>Lona Extra Forte Anti-UV</h3></div>
+            </div>
+        </section>
+
+        <section id="fabricacao">
+            <h2 class="section-title">Processo de Fabricação</h2>
+            <div class="fabricacao-imagens">
+                <img src="Foto da Lona Plástica Preta2.jpg" alt="Fabricação 1" style="max-width: 20%;">
+                <img src="production-1.jpg" alt="Fabricação 2" style="max-width: 20%;">
+            </div>
+            <p style="text-align: center;">Na Lonabras, nosso processo envolve seleção rigorosa de matérias-primas, extrusão de polímeros de alta pureza e tratamento anti-UV. Garantimos lonas resistentes, impermeáveis e com longa vida útil.</p>
+        </section>
+
+        <section id="contato" class="contact">
+            <h2>Entre em Contato</h2>
+            <p>
+                WhatsApp:
+                <a href="https://wa.me/5541991062006" target="_blank">
+                    <img src="WhatsApp_icon.png" alt="WhatsApp" style="width: 24px; height: 24px; margin-right: 8px;">
+                    Clique aqui para conversar
+                </a>
+            </p>
+            <p>Interessado na nossa lona plástica preta? Entre em contato conosco para mais informações e pedidos:</p>
+            <p>Email: <a href="mailto:vendas@lonabras.com.br">vendas@lonabras.com.br</a></p>
+            <p>Telefone: <a href="tel:+554130166001">(41) 99106-2006</a></p>
+            <p>Horário de funcionamento: Seg a Sex - 08:00 às 18:00</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Lona Plástica Preta. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
